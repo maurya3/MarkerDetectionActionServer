@@ -71,6 +71,50 @@ The robot will start rotating in its place if it does not detect the given goal.
 
 If it detects the specified marker id, it will generate the feedback and result command in the action-specific topic.
 ![arucom](https://user-images.githubusercontent.com/58929684/174861990-f50330da-7054-4bd8-a6bb-d1ca40055a25.png)
+```
+header:
+  seq: 4
+  stamp:
+	secs: 2274
+	nsecs: 324000000
+  frame_id: ''
+status:
+  goal_id:
+	stamp:
+  	secs: 2272
+  	nsecs: 523000000
+	id: "/camera_detection_action_server-4-2272.523000000"
+  status: 3
+  text: ''
+result:
+  robot_pose_x: 2.0703835487365723
+  robot_pose_y: 0.06305591017007828
+  robot_pose_theta: 3.009765148162842
+```
+
+
+It sends the status message as well:
+```
+header:
+  seq: 3985
+  stamp:
+	secs: 2272
+	nsecs: 573000000
+  frame_id: ''
+status:
+  goal_id:
+	stamp:
+  	secs: 2272
+  	nsecs: 523000000
+	id: "/camera_detection_action_server-4-2272.523000000"
+  status: 1
+  text: "This goal has been accepted by the simple action server"
+feedback:
+  status: "current position of the robot is [[0.58109108 0.06305591 2.07038344]] and orientation\
+  \ is [[ 3.00976522e+00  2.99084909e-03 -1.02249919e+00]] from marker [26]"
+
+```
+
 
 
 
