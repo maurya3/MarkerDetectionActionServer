@@ -1,0 +1,4 @@
+<launch>
+    <node name="camera_detection_action_server" pkg="peer_action_server" type="camera_detection.py" output="screen">
+    </node>
+</launch>

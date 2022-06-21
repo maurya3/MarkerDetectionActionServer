@@ -1,0 +1,12 @@
+#goal         
+int64 marker_number
+
+---
+#result
+int64 robot_pose_x
+int64 robot_pose_y
+int64 robot_pose_theta
+
+---
+#feedback
+string status
