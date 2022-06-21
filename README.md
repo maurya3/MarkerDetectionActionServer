@@ -46,6 +46,31 @@ In another window, run the marker action server launch command,
 
 ``` roslaunch peer_action_server camera_detection.launch ```
 
+![turtle26](https://user-images.githubusercontent.com/58929684/174861498-c37664bb-f631-49ce-b3e7-4917b46701d5.png)
+
+In other terminal window publish some marker id using command 
+```
+
+rostopic pub /camera_Detection_action_server/goal peer_msgs/CameraDetectionActionGoal "header:
+  seq: 0
+  stamp:
+	secs: 0
+	nsecs: 0
+  frame_id: ''
+goal_id:
+  stamp:
+	secs: 0
+	nsecs: 0
+  id: ''
+goal:
+  marker_number: 26"
+
+```
+In place of the marker id, we can specify the marker number to be detect and get relative pose of the robot.
+The robot will start rotating in its place if it does not detect the given goal. 
+
+If it detects the specified marker id, it will generate the feedback and result command in the action-specific topic.
+![arucom](https://user-images.githubusercontent.com/58929684/174861990-f50330da-7054-4bd8-a6bb-d1ca40055a25.png)
 
 
 
